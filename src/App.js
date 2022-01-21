@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+const Square = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <button className="square">gimme tacos</button>
+  )
 }
+
+const App = () => {
+  // cannot use this keyword
+  return (
+    <>
+      <h1>tacos are better than Hello World</h1>
+      <Square />
+    </>
+  )
+};
+
+// function App() {
+//   // can use this keyword
+// }
 
 export default App;
